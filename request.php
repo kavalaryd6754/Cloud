@@ -1,4 +1,5 @@
 <?php
+$hostname = gethostname();
 $servername = "finaldb.cpyr107ra164.us-east-1.rds.amazonaws.com";
 $username = "admin";
 $password = "goldowl77";
@@ -21,4 +22,5 @@ if($result->num_rows > 0) {
   echo "Title: $title, Genre: $genre, Released in: $release, Directed by: $director <br>";
  }
 }
+echo "<p>Hostname: $hostname</p>";
 ?>
